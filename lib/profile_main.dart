@@ -14,9 +14,9 @@ class _MyProfileState extends State<MyProfile> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text(widget.title),
+          title: Text("PROFILE"),
           centerTitle: true,
-          backgroundColor: Color(0xff66cdaa),
+          backgroundColor: Colors.blue,
           automaticallyImplyLeading: false),
       body: Container(
         child: Center(
@@ -72,7 +72,7 @@ class _MyProfileState extends State<MyProfile> {
                       return ProfilePage();
                     }));
                   },
-                  style: ElevatedButton.styleFrom(primary: Color(0xff66cdaa)),
+                  style: ElevatedButton.styleFrom(primary: Colors.blue),
                   child: Center(
                     child: Text(
                       "Edit",
