@@ -14,7 +14,7 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        backgroundColor: Color(0xff66cdaa),
+        backgroundColor: Colors.blue,
         // leading: IconButton(
         //   icon: Icon(
         //     Icons.arrow_back,
@@ -115,7 +115,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                            primary: Color(0xff66cdaa)),
+                            primary: Colors.blue),
                         // color: Colors.black54,
                         child: Center(
                           child: Text(
@@ -194,7 +194,7 @@ class _ProfilePageState extends State<ProfilePage> {
 class HeaderCurvedContainer extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    Paint paint = Paint()..color = Color(0xff66cdaa);
+    Paint paint = Paint()..color = Colors.blue;
     Path path = Path()
       ..relativeLineTo(0, 80)
       ..quadraticBezierTo(size.width / 2, 170, size.width, 80)
