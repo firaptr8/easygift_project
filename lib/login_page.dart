@@ -101,7 +101,7 @@ class _LoginPageState extends State<LoginPage> {
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
-                          return SignupPage();
+                          return MyBottomNavBar();
                         }));
                       },
                       padding: EdgeInsets.all(0),
@@ -154,7 +154,7 @@ class _LoginPageState extends State<LoginPage> {
                       onTap: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
-                          return MyBottomNavBar();
+                          return SignupPage();
                         }));
                       },
                       child: Text(
