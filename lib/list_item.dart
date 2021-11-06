@@ -38,9 +38,9 @@ class _MyListItemState extends State<MyListItem> {
             ),
             onPressed: () {},
           ),
-          title: Text(widget.title),
+          title: Text("LIST"),
           centerTitle: true,
-          backgroundColor: Color(0xff66cdaa),
+          backgroundColor: Colors.blue,
           automaticallyImplyLeading: false),
       body: Container(
         child: prod.length > 0
