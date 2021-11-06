@@ -15,13 +15,13 @@ class _ProfilePageState extends State<ProfilePage> {
       appBar: AppBar(
         elevation: 0.0,
         backgroundColor: Color(0xff66cdaa),
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back,
-            color: Colors.white,
-          ),
-          onPressed: () {},
-        ),
+        // leading: IconButton(
+        //   icon: Icon(
+        //     Icons.arrow_back,
+        //     color: Colors.white,
+        //   ),
+        //   onPressed: () {},
+        // ),
       ),
       body: Stack(
         alignment: Alignment.center,
@@ -114,7 +114,8 @@ class _ProfilePageState extends State<ProfilePage> {
                       width: double.infinity,
                       child: ElevatedButton(
                         onPressed: () {},
-                        style: ElevatedButton.styleFrom(primary: Color(0xff66cdaa)),
+                        style: ElevatedButton.styleFrom(
+                            primary: Color(0xff66cdaa)),
                         // color: Colors.black54,
                         child: Center(
                           child: Text(
@@ -164,7 +165,8 @@ class _ProfilePageState extends State<ProfilePage> {
                   color: Colors.white,
                   image: DecorationImage(
                     fit: BoxFit.cover,
-                    image: NetworkImage("https://spesialis1.orthopaedi.fk.unair.ac.id/wp-content/uploads/2021/02/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture-300x300.jpg"),
+                    image: NetworkImage(
+                        "https://spesialis1.orthopaedi.fk.unair.ac.id/wp-content/uploads/2021/02/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture-300x300.jpg"),
                   ),
                 ),
               ),

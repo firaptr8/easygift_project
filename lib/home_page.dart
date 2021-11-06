@@ -12,7 +12,11 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(widget.title), centerTitle: true, backgroundColor: Color(0xff66cdaa)),
+      appBar: AppBar(
+          title: Text(widget.title),
+          centerTitle: true,
+          backgroundColor: Color(0xff66cdaa),
+          automaticallyImplyLeading: false),
       body: Text("Halaman Home"),
     );
   }

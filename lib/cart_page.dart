@@ -12,7 +12,11 @@ class _CartPageState extends State<CartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(widget.title), centerTitle: true, backgroundColor: Color(0xff66cdaa)),
+      appBar: AppBar(
+          title: Text(widget.title),
+          centerTitle: true,
+          backgroundColor: Color(0xff66cdaa),
+          automaticallyImplyLeading: false),
       body: Text("Halaman Keranjang"),
     );
   }
