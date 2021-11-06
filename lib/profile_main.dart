@@ -61,12 +61,10 @@ class _MyProfileState extends State<MyProfile> {
                   ),
                 ),
               ),
-              SizedBox(
-                height: 30,
-              ),
+              SizedBox(height: 5),
               Container(
                 height: 45,
-                width: double.infinity,
+                width: 170,
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
@@ -79,13 +77,25 @@ class _MyProfileState extends State<MyProfile> {
                     child: Text(
                       "Edit",
                       style: TextStyle(
-                        fontSize: 23,
+                        fontSize: 18,
                         color: Colors.white,
                       ),
                     ),
                   ),
                 ),
-              )
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              SizedBox(
+                height: 60.0,
+                child: Card(
+                  child: ListTile(
+                      leading: Icon(Icons.exit_to_app, size: 20.0),
+                      title: Text('Logout'),
+                      onTap: () {}),
+                ),
+              ),
             ],
           ),
         ),
