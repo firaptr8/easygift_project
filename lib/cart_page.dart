@@ -15,9 +15,11 @@ class _CartPageState extends State<CartPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text(widget.title),
-          centerTitle: true,
-          backgroundColor: Colors.blue),
+        title: Text(widget.title),
+        centerTitle: true,
+        backgroundColor: Colors.blue,
+        automaticallyImplyLeading: false,
+      ),
       body: Container(
         child: prod.length > 0
             ? ListView.builder(
