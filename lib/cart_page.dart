@@ -15,7 +15,7 @@ class _CartPageState extends State<CartPage> {
       appBar: AppBar(
           title: Text(widget.title),
           centerTitle: true,
-          backgroundColor: Color(0xff66cdaa),
+          backgroundColor: Colors.blue,
           automaticallyImplyLeading: false),
       body: Text("Halaman Keranjang"),
     );
