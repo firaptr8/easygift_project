@@ -13,7 +13,11 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text("HOME"), centerTitle: true, backgroundColor: Colors.blue),
+        title: Text("HOME"),
+        centerTitle: true,
+        backgroundColor: Colors.blue,
+        automaticallyImplyLeading: false,
+      ),
       body: Container(
         padding: EdgeInsets.all(20),
         child: GridView.count(crossAxisCount: 2, children: <Widget>[
