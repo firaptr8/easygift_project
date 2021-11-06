@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'list_item.dart';
 import 'home_page.dart';
-import 'profile_page.dart';
+import 'profile_main.dart';
 import 'cart_page.dart';
 
 // void main() => runApp(MyApp());
@@ -34,7 +34,7 @@ class _MyBottomNavBarState extends State<MyBottomNavBar> {
     MyHomePage(title: 'Easygift'),
     MyListItem(title: 'Easygift'),
     CartPage(title: 'Shopping Cart'),
-    ProfilePage(),
+    MyProfile(title: 'Profile'),
   ];
 
   @override
