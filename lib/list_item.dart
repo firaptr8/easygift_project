@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'item_page.dart';
 
 // void main() => runApp(MyApp());
 
@@ -150,7 +151,12 @@ class ProductsCard extends StatelessWidget {
                 trailing: IconButton(
                   icon: Icon(Icons.shopping_cart),
                   color: Colors.grey,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return DetailItem();
+                    }));
+                  },
                 )),
             Column(
               children: <Widget>[
