@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'form_payment.dart';
 
 class UnpaidPage extends StatefulWidget {
   @override
@@ -8,9 +9,9 @@ class UnpaidPage extends StatefulWidget {
 class _UnpaidPageState extends State<UnpaidPage> {
   @override
   Widget build(BuildContext context) {
-    Widget payNow = InkWell(
-//      onTap: () => Navigator.of(context)
-//          .push(MaterialPageRoute(builder: (_) => ViewProductPage())),
+    Widget buyNow = InkWell(
+      onTap: () => Navigator.of(context)
+          .push(MaterialPageRoute(builder: (_) => FormPayment())),
       child: Container(
         height: 80,
         width: MediaQuery.of(context).size.width / 1.5,
@@ -24,7 +25,7 @@ class _UnpaidPageState extends State<UnpaidPage> {
               )
             ], borderRadius: BorderRadius.circular(9.0)),
         child: Center(
-          child: Text("Pay Now",
+          child: Text("Buy Now",
               style: const TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w600,
@@ -83,8 +84,8 @@ class _UnpaidPageState extends State<UnpaidPage> {
                                     trailing: Text('74.68'),
                                   ),
                                   ListTile(
-                                    title: Text('Jumlah'),
-                                    trailing: Text('5'),
+                                    title: Text('Tax'),
+                                    trailing: Text('1.25'),
                                   ),
                                   ListTile(
                                     title: Text('Subtotal'),
@@ -117,7 +118,7 @@ class _UnpaidPageState extends State<UnpaidPage> {
                             ),
                             Padding(
                               padding: const EdgeInsets.only(bottom: 20),
-                              child: payNow,
+                              child: buyNow,
                             )
                           ]))))),
         ));
