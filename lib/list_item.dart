@@ -32,12 +32,19 @@ class _MyListItemState extends State<MyListItem> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          leading: IconButton(
-            icon: Icon(
-              Icons.search,
-              color: Colors.white,
+          // leading: IconButton(
+          //   icon: Icon(
+          //     Icons.search,
+          //     color: Colors.white,
+          //   ),
+          //   onPressed: () {},
+          // ),
+          leading: TextField(
+            decoration: InputDecoration(
+              prefixIcon: Icon(Icons.search),
+              border: OutlineInputBorder(),
+              hintText: 'Search Tech Talk',
             ),
-            onPressed: () {},
           ),
           title: Text("LIST"),
           centerTitle: true,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'profile_page.dart';
+import 'login_page.dart';
 
 class MyProfile extends StatefulWidget {
   MyProfile({Key key, this.title}) : super(key: key);
@@ -93,7 +94,8 @@ class _MyProfileState extends State<MyProfile> {
                   child: ListTile(
                       leading: Icon(Icons.exit_to_app, size: 20.0),
                       title: Text('Logout'),
-                      onTap: () {}),
+                      onTap: () => Navigator.of(context).push(
+                          MaterialPageRoute(builder: (_) => LoginPage()))),
                 ),
               ),
             ],
